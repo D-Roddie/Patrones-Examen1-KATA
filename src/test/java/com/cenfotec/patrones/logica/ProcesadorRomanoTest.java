@@ -11,7 +11,14 @@ public class ProcesadorRomanoTest {
 	@Test
 	public void pruebaUno() {
 		ProcesadorRomano PR = new ProcesadorRomano();
-		assertEquals(10, PR.logicaRomanosaNumeros("LX"));
+		assertEquals(60, PR.logicaRomanosaNumeros("LX"));
 	}
+	
+	@Test
+	public void pruebaDos() {
+		ProcesadorRomano PR = new ProcesadorRomano();
+		assertEquals(16, PR.logicaRomanosaNumeros("XVI"));
+	}
+
 
 }
