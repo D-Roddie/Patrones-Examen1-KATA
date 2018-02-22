@@ -45,7 +45,7 @@ public class KataExamenApplication {
 	public static void ingresarRomanos () throws IOException {
 		String num_romano;
 		
-		System.out.println("Ingrese un número romano, para ver su valor:");
+		System.out.println("Ingrese un número romano, para ver su valor con numeros normales:");
 		 num_romano = in.readLine();
 		 
 			
