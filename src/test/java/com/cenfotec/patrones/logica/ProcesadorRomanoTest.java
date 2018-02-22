@@ -7,8 +7,9 @@ import org.junit.Test;
 public class ProcesadorRomanoTest {
 
 	@Test
-	public void pruebaError() {
-		return 0;
+	public void pruebaUno() {
+		ProcesadorRomano PR = new ProcesadorRomano();
+		assertEquals("LX", PR.logicaRomana("LX"));
 	}
 
 }
