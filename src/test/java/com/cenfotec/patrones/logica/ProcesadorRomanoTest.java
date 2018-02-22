@@ -23,7 +23,25 @@ public class ProcesadorRomanoTest {
 	@Test
 	public void pruebaTres() {
 		ProcesadorRomano PR = new ProcesadorRomano();
-		assertEquals(70, PR.logicaRomanosaNumeros("XXL"));
+		assertEquals(8, PR.logicaRomanosaNumeros("VIII"));
+	}
+	
+	@Test
+	public void pruebaCuatro() {
+		ProcesadorRomano PR = new ProcesadorRomano();
+		assertEquals(21, PR.logicaRomanosaNumeros("XXI"));
+	}
+	
+	@Test
+	public void pruebaCinco() {
+		ProcesadorRomano PR = new ProcesadorRomano();
+		assertEquals(101, PR.logicaRomanosaNumeros("CI"));
+	}
+
+	@Test
+	public void pruebaSeis() {
+		ProcesadorRomano PR = new ProcesadorRomano();
+		assertEquals(161, PR.logicaRomanosaNumeros("CLXI"));
 	}
 
 

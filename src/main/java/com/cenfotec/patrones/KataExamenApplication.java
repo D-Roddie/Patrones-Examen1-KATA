@@ -48,6 +48,7 @@ public class KataExamenApplication {
 		System.out.println("Ingrese un número romano, para ver su valor:");
 		 num_romano = in.readLine();
 		 
+			
 		 System.out.println("El valor del número romano es: " + num_romano + " = " + PC.logicaRomanosaNumeros(num_romano));
 		 
 		 

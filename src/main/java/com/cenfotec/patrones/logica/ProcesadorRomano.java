@@ -32,8 +32,7 @@ public class ProcesadorRomano {
 				if(letraUno >= letraDos){
 					romano = romano + letraUno;
 				} else {
-					romano = romano + letraDos - letraUno;
-					i ++;
+					System.out.println("El número Romano fue escrito incorrectamente");
 				}
 	
 			} else {
