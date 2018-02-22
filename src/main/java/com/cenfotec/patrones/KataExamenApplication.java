@@ -2,13 +2,17 @@ package com.cenfotec.patrones;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.cenfotec.patrones.logica.ProcesadorRomano;
+
 import java.io.*;
 @SpringBootApplication
 public class KataExamenApplication {
 	static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 	static PrintStream out = System.out;
-	
-	public static void main(String[] args) {
+	static ProcesadorRomano PC = new ProcesadorRomano();
+	public static void main(String[] args) throws IOException {
+		mostrarMenu();
 		
 	}
 	
@@ -29,13 +33,25 @@ public class KataExamenApplication {
 		
 			        switch (pOpcion) {
 		            case 1:
-			            
+			            ingresarRomanos();
 			                break;
 		
 		
 			            default:
 			                out.println("Opción inválida");
 			        }
+	}
+	
+	public static void ingresarRomanos () throws IOException {
+		String num_romano;
+		
+		System.out.println("Ingrese un número romano, para ver su valor:");
+		 num_romano = in.readLine();
+		 
+		 System.out.println("El valor del número romano es: " + PC.logicaRomanosaNumeros(num_romano));
+		 
+		 
+		
 	}
 }
 
